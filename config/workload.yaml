@@ -7,6 +7,14 @@ metadata:
     app.kubernetes.io/part-of: tanzu-csharp-blazorapp
     apps.tanzu.vmware.com/has-tests: false
 spec:
+  params:
+  - name: annotations
+    value:
+      autoscaling.knative.dev/metric: "rps"
+      autoscaling.knative.dev/target: "10"
+      autoscaling.knative.dev/window: "10s"
+      autoscaling.knative.dev/max-scale: "10"
+      autoscaling.knative.dev/min-scale: "1"
   source:
     git:
       url: https://github.com/kubeages/tanzu-csharp-blazorapp.git
