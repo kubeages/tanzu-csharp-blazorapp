@@ -10,7 +10,7 @@ spec:
   params:
   - name: annotations
     value:
-      autoscaling.knative.dev/metric: "rps"
+      autoscaling.knative.dev/metric: "concurrency"
       autoscaling.knative.dev/target: "10"
       autoscaling.knative.dev/window: "10s"
       autoscaling.knative.dev/max-scale: "10"
