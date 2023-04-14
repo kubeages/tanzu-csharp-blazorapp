@@ -7,4 +7,5 @@ metadata:
 spec:
   type: service
   lifecycle: experimental
-  owner: default-team
+  owner: epic-dev-team
+  system: tanzu-csharp-web
